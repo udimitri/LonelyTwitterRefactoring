@@ -1,4 +1,4 @@
-package ca.ualberta.cs.lonelytwitter;
+package ca.ualberta.cs.lonelytwitternew;
 
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
@@ -21,7 +21,7 @@ public class TweetsFileManager {
 	}
 
 	@SuppressWarnings("unchecked")
-	public List<NormalLonelyTweet> loadTweets() {
+	public List<NormalLonelyTweet> loadTheTweets() {
 		List<NormalLonelyTweet> tweets = new ArrayList<NormalLonelyTweet>();
 
 		try {

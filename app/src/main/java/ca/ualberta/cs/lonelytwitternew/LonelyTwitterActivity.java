@@ -1,4 +1,4 @@
-package ca.ualberta.cs.lonelytwitter;
+package ca.ualberta.cs.lonelytwitternew;
 
 import java.util.Date;
 import java.util.List;
@@ -34,7 +34,7 @@ public class LonelyTwitterActivity extends Activity {
 		super.onStart();
 
 		tweetsProvider = new TweetsFileManager(this);
-		tweets = tweetsProvider.loadTweets();
+		tweets = tweetsProvider.loadTheTweets();
 		adapter = new ArrayAdapter<NormalLonelyTweet>(this, R.layout.list_item,
 				tweets);
 		oldTweetsList.setAdapter(adapter);
